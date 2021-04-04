@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <style>
+        body {
+            background: linear-gradient(#aeddfc,#beafff);
+        }
+        h1 {
+            text-align: center;
+            color:#4da6dd;
+        }
+        h2 {
+            text-align: center;
+            border: 1px solid #4da6dd;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            line-height: 30px;
+        }
+        img {
+            max-width: 70%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: rgb(139, 139, 139, 0.2);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            transition: all 200ms ease-in-out;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .country {
+            font-weight: 500;
+            color: #05466e;
+            font-style: italic;
+        }
+        .footer {
+            text-align: center;
+        }  
+        .learn-more {
+            display: block;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+        button:hover {
+            cursor: pointer;
+            background: #4da6dd;
+            color: black;
+        }
+        .main {
+            line-height: 1.5;
+            font-size: 14px;
+            margin-top: 20px;
+            text-indent: 5%;
+        }
+        .more-info {
+            text-indent: none;
+        }
+        .veronica {
+            text-decoration: none;
+        }
+        .veronica:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>
+        Traveling in Europe ✈
+    </h1>
+    <h2>
+        Italy➡Spain➡Belgium➡France➡Netherlands
+    </h2>
+    <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/id6d8bf98f051a8ac/version/1580393963/paris-tourism-france-best-destinations-europe.jpg">
+    <hr />
+    <p class="main">The trip began from the <span class="country">United States</span> where I relocated to Naples, <span class="country">Italy</span>. I had taken a few trips from <span class="country">Italy</span> to <span class="country"></span>Belgium</span> as well as Barcelona, 
+        <span class="country">Spain</span>. I enjoyed the festivals of Tomorrowland while in <span class="country">Belgium</span>. After a little over 2 years in <span class="country">Italy</span>, my time there was coming to a close
+        I decided to take another trip to <span class="country">Belgium</span> before going back to the <span class="country">United States</span>. During the first trip, I decided to hang around for at 
+        least the next few months. The trip included sights of <span class="country">France</span>, the <span class="country">Netherlands</span>, and places in <span class="country">Belgium</span>. All of Europe enticed me; this made me 
+        decide to take on the process of my dual citizenship from the Czech Republic. I have loved traveling in Europe.
+    </p>
+    <p class="more-info">
+    <a href="https://www.europeanbestdestinations.com/european-best-destinations-2020/" target="_blank" class="learn-more">
+        <em>Learn more about great trips in Europe here! </em>
+    </a>
+    </p>
+    <button class="book-button">
+        <strong>Book Travel ♥ </strong>
+    </button>
+    <br />
+    <p class="footer">
+    This page was built by 
+    <a href="https://www.linkedin.com/in/veronica-mccormick-b85025174/" target="_blank" class="veronica">
+     Veronica Smigielski
+    </a>
+    &copy; 2020
+</p>
+</div>
+<script>
+    function book() {
+        let name = prompt("What is your name?");
+    
+        if (name.length > 0) {
+        let email = prompt("What is your email address?");
+        let destination = prompt("What is your dream destination?");
+        alert("Thank you " + name + ", We'll be in touch. Dream big ♥ ✈ ");
+        }   else {
+            alert("Thanks for visiting the site!")
+        }
+    }
+    let bookButton = document.querySelector(".book-button");
+    bookButton.addEventListener("click", book);
+</script>
+</body>
+</html>
